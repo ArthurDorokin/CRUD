@@ -5,7 +5,7 @@ class ViewUser extends Component {
     render() {
         return (
             <div className="viewUser">
-                viewUser
+                viewUser.
             </div>
         )
     }
