@@ -5,7 +5,7 @@ class AddUser extends Component {
     render() {
         return (
             <div className="addUser">
-                addUser
+                addUser.
             </div>
         )
     }
