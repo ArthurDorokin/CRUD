@@ -1,0 +1,52 @@
+.main .viewUser .title {
+    display: flex;
+    padding: 0 0 5px 0;
+    /*border-bottom: 2px solid rgba(0, 0, 0, .1);*/
+}
+
+.main .viewUser .title .title-name {
+    width: 30%;
+}
+
+.main .viewUser .title .title-userName {
+    width: 40%;
+}
+
+.main .viewUser .list-user-wrap .list-user {
+    display: flex;
+    margin: 5px 0 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 10px 0;
+}
+
+.main .viewUser .list-user-wrap .list-name {
+    width: 30%;
+}
+
+.main .viewUser .list-user-wrap .list-username {
+    width: 40%;
+}
+
+.main .wrap-viewUser .list-user-wrap .btn-edit{
+    background: #17a2b8;
+    outline: none;
+    border: 0;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 7px 15px 7px 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 0 5px 0 0;
+}
+
+.main .wrap-viewUser .list-user-wrap .btn-delete{
+    background: #dc3545;
+    outline: none;
+    border: 0;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 7px 15px 7px 15px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+

@@ -1,0 +1,27 @@
+.main {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main .wrap-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.main .wrap-main {
+    width: 100%;
+}
+
+.main .wrap-main .addUser {
+    width: 45%;
+}
+
+.main .wrap-main .viewUser {
+    width: 45%;
+}
+
+
