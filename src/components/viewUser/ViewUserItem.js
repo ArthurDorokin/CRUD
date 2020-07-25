@@ -2,13 +2,6 @@ import React, {Component} from "react";
 
 class AddUserItem extends Component {
 
-    editUser = (id) => {
-        console.log("editUser", id)
-    }
-    deleteUser = (id) => {
-        console.log("deleteUser", id)
-    }
-
     render() {
 
         const {usersData} = this.props

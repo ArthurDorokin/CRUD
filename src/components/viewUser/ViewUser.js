@@ -4,13 +4,6 @@ import AddUserItem from '../viewUser/ViewUserItem.js'
 
 class ViewUser extends Component {
 
-    editUser = (id) => {
-        console.log("editUser", id)
-    }
-    deleteUser = (id) => {
-        console.log("deleteUser", id)
-    }
-
     render() {
         return (
             <div className="viewUser">
@@ -23,8 +16,8 @@ class ViewUser extends Component {
                     </div>
                     <AddUserItem
                         usersData={this.props.usersData}
-                        editUser={this.editUser}
-                        deleteUser={this.deleteUser}
+                        editUser={this.props.editUser}
+                        deleteUser={this.props.deleteUser}
                     />
                 </div>
             </div>

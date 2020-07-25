@@ -1,0 +1,47 @@
+.main .editUser label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+}
+.main .editUser form {
+    width: 100%;
+}
+
+.main .editUser .name {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 10px;
+    outline: 0;
+    margin: 5px 0 0 0;
+}
+
+.main .editUser .nameUser {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 10px;
+    outline: 0;
+    margin: 5px 0 0 0;
+}
+
+.main .editUser .btn-editUser{
+    border: 0;
+    color: #ffffff;
+    border-radius: 3px;
+    background: #007bff;
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}
+
+
+.main .editUser .btn-editUser.cancel{
+    color: #000000;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, .3);
+    letter-spacing: 1px;
+    padding: 10px 15px 10px 15px;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}

@@ -19,7 +19,9 @@
 .main .wrap-main .addUser {
     width: 45%;
 }
-
+.main .wrap-main .editUser {
+    width: 45%;
+}
 .main .wrap-main .viewUser {
     width: 45%;
 }
