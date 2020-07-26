@@ -9,7 +9,11 @@ class App extends Component {
     state = {
         usersData,
         editing: false,
-        filterThisUser: '',
+        filterThisUser: {
+            id: null,
+            name: '',
+            username: ''
+        },
         name: '',
         nameUser: ''
     }
@@ -35,15 +39,14 @@ class App extends Component {
 
     // form edit
     handleChangeEditName = (e) => {
-        this.setState({name: e.target.value});
+        this.setState({ filterThisUser: { ...this.state.filterThisUser, name: e.target.value} });
     }
 
     handleChangeEditNameUser = (e) => {
-        this.setState({nameUser: e.target.value});
+        this.setState({ filterThisUser: { ...this.state.filterThisUser, username: e.target.value} });
     }
     addNewUserSubmitEdit = (e) => {
         e.preventDefault()
-
         this.setState({editing: false});
     }
 
@@ -51,8 +54,9 @@ class App extends Component {
     editUser = (id) => {
         const usersData = this.state.usersData;
         const filterThisUser = usersData.filter(item => item.id === id)
+        const [card] = filterThisUser;
         this.setState({editing: true});
-        this.setState({filterThisUser: filterThisUser});
+        this.setState({filterThisUser: {...card}});
     }
 
     editUserCancel = (e) => {
@@ -68,7 +72,7 @@ class App extends Component {
     }
 
     render() {
-
+        console.log(this.state.filterThisUser)
         return (
             <div className="main">
                 <div className="container">

@@ -3,7 +3,6 @@ import './ViewUser.css'
 import AddUserItem from '../viewUser/ViewUserItem.js'
 
 class ViewUser extends Component {
-
     render() {
         return (
             <div className="viewUser">

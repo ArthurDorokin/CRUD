@@ -1,11 +1,8 @@
 import React, {Component} from "react";
 
 class AddUserItem extends Component {
-
     render() {
-
         const {usersData} = this.props
-
         return (
             <div className="list-user-wrap">
                 {usersData.map((item) =>
