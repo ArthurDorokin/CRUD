@@ -39,14 +39,24 @@ class App extends Component {
 
     // form edit
     handleChangeEditName = (e) => {
-        this.setState({ filterThisUser: { ...this.state.filterThisUser, name: e.target.value} });
+        this.setState({filterThisUser: {...this.state.filterThisUser, name: e.target.value}});
     }
 
     handleChangeEditNameUser = (e) => {
-        this.setState({ filterThisUser: { ...this.state.filterThisUser, username: e.target.value} });
+        this.setState({filterThisUser: {...this.state.filterThisUser, username: e.target.value}});
     }
     addNewUserSubmitEdit = (e) => {
         e.preventDefault()
+        const editNowUser = this.state.filterThisUser;
+        const editUsersData = this.state.usersData;
+        editUsersData.map(item => {
+            if (item.id === editNowUser.id) {
+                item.name = editNowUser.name;
+                item.username = editNowUser.username;
+            }
+            return item;
+        })
+
         this.setState({editing: false});
     }
 
@@ -73,6 +83,7 @@ class App extends Component {
 
     render() {
         console.log(this.state.filterThisUser)
+        console.log(this.state.editUsersData)
         return (
             <div className="main">
                 <div className="container">

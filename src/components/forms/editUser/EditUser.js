@@ -4,7 +4,6 @@ import './EditUser.css'
 class EditUser extends Component {
     render() {
         const {filterThisUser} = this.props
-        console.log(filterThisUser);
         return (
             <div className="editUser">
                 <h2>Edit user</h2>

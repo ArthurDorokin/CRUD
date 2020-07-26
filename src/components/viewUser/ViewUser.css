@@ -27,7 +27,7 @@
     width: 40%;
 }
 
-.main .wrap-viewUser .list-user-wrap .btn-edit{
+.main .wrap-viewUser .list-user-wrap .btn-edit {
     background: #17a2b8;
     outline: none;
     border: 0;
@@ -39,7 +39,7 @@
     margin: 0 5px 0 0;
 }
 
-.main .wrap-viewUser .list-user-wrap .btn-delete{
+.main .wrap-viewUser .list-user-wrap .btn-delete {
     background: #dc3545;
     outline: none;
     border: 0;

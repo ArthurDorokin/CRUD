@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: 10px 0 10px 0;
 }
+
 .main .addUser form {
     width: 100%;
 }
@@ -23,7 +24,7 @@
     margin: 5px 0 0 0;
 }
 
-.main .addUser .btn-addUser{
+.main .addUser .btn-addUser {
     border: 0;
     color: #ffffff;
     border-radius: 3px;
