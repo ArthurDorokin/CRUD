@@ -5,7 +5,7 @@ class AddUser extends Component {
     render() {
         return (
             <div className="addUser">
-                <h2>Add user.</h2>
+                <h2>Add user</h2>
                 <form onSubmit={this.props.addNewUserSubmit}>
                     <label>Name<input type="text" className="name"
                                       value={this.props.name}
